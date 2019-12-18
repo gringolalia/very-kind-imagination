@@ -1,0 +1,27 @@
+extends layout
+
+block content
+		nav.uk-navbar-container.uk-margin(uk-navbar uk-sticky)
+			.uk-navbar-left
+				a.uk-navbar-item.uk-logo.with.dignity(href='#') 
+					i.fas.fa-sun.fa-2x
+					| &nbsp; Engenho Novo LLC
+				ul.uk-navbar-nav
+					li
+						a(href='#')
+							span.uk-icon.uk-margin-small-right.with.dignity(uk-icon='icon: fork') &nbsp; In Principio
+					li
+						a(href='#')
+							span.uk-icon.uk-margin-small-right.with.dignity(uk-icon='icon: fork') &nbsp; In Media Res
+
+					li
+						a(href='#')
+							span.uk-icon.uk-margin-small-right.with.dignity(uk-icon='icon: fork') &nbsp; Opções ao Gogo
+
+				.uk-navbar-item
+					div.with.dignity
+						button.uk-button.uk-button.uk-button-primary Impressão
+				.uk-navbar-item
+					form(action='javascript:void(0)')
+						input.uk-input.uk-form-width-small(type='text' placeholder='Guglear')
+						button.uk-button.uk-button-default.with.dignity Expressão
